@@ -10,6 +10,7 @@ export const AddCategory = ({ setCategories }) => {
     const handleInputChange = (e) => {
         // Para igualar nuestro estado a lo que escribamos en el input
         setInputValue(e.target.value);
+
     }
 
     const handleSubmit = (e) => {
@@ -28,6 +29,7 @@ export const AddCategory = ({ setCategories }) => {
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
+                placeholder='Buscar gifs'
                 value={inputValue}
                 onChange={handleInputChange}
             ></input>
